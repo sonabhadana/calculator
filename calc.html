@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css";
+</head>
+<body>
+    <div id="main" >
+        <form name="f">
+            <input type="text" name="a" placeholder="0" id="box"><br>
+            <input type="button" value="1" onclick="f.a.value+=1">
+            <input type="button" value="2" onclick="f.a.value+=2">
+            <input type="button" value="3" onclick="f.a.value+=3">
+            <input type="button" value="+" onclick="add()">
+            <br>
+            
+            <input type="button" value="4" onclick="f.a.value+=4">
+            <input type="button" value="5" onclick="f.a.value+=5">
+            <input type="button" value="6" onclick="f.a.value+=6">
+            <input type="button" value="-" onclick="sub()">
+            <br>
+            
+            <input type="button" value="7" onclick="f.a.value+=7">
+            <input type="button" value="8" onclick="f.a.value+=8">
+            <input type="button" value="9" onclick="f.a.value+=9">
+            <input type="button" value="x" onclick="mul()">
+            <br>
+            
+            <input type="button" value="c" onclick="f.a.value=''">
+            <input type="button" value="0" onclick="f.a.value+=0">
+            <input type="button" value="=" onclick="f.a.value=eval(f.a.value)">
+            <input type="button" value="/" onclick="div()">
+            <br>
+        </form>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
